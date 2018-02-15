@@ -13,6 +13,8 @@ namespace voxpopuli.Models
 
         public string Proprietario { get; set;}
 
+        public DateTime DataSegnalazione { get; set; }
+
         public bool PresaInCarico { get; set; }
 
         public bool Stato { get; set; }
