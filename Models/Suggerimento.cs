@@ -7,11 +7,11 @@ namespace voxpopuli.Models
 {
     public class Suggerimento
     {
-        int id { get; set; }
-        DateTime data { get; set; }
-        string titolo { get; set; }
-        string descrizione { get; set; }
-        int voti { get; set; }
+        public int id { get; set; }
+        public DateTime data { get; set; }
+        public string titolo { get; set; }
+        public string descrizione { get; set; }
+        public int voti { get; set; }
 
     }
 }
