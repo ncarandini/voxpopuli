@@ -8,6 +8,11 @@ namespace voxpopuli.Dati
 {
     public class VoxPopuliDbContext : DbContext
     {
+
+        public VoxPopuliDbContext(DbContextOptions<VoxPopuliDbContext> options)
+        : base(options)
+        { }
+
         public DbSet<Suggerimento> Suggerimenti { get; set; }
         public DbSet<Segnalazione> Segnalazioni { get; set; }
 
