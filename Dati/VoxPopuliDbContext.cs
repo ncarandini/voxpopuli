@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace voxpopuli.Models
+namespace voxpopuli.Dati
 {
     public class VoxPopuliDbContext : DbContext
     {
@@ -22,6 +22,7 @@ namespace voxpopuli.Models
             modelBuilder.Entity<Suggerimento>().Property(t => t.Descrizione).IsRequired();
             modelBuilder.Entity<Suggerimento>().Property(t => t.Voti).IsRequired();
             modelBuilder.Entity<Suggerimento>().Property(t => t.Titolo).IsRequired();
+            modelBuilder.Entity<Suggerimento>().HasIndex(t => t.Data);
             modelBuilder.Entity<Suggerimento>().HasIndex(t => t.Descrizione);
             modelBuilder.Entity<Suggerimento>().HasIndex(t => t.Titolo);
         }

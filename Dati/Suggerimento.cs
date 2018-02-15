@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace voxpopuli.Models
+namespace voxpopuli.Dati
 {
     public class Suggerimento
     {

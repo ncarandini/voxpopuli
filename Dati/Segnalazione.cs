@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace voxpopuli.Models
+namespace voxpopuli.Dati
 {
     public class Segnalazione
     {
