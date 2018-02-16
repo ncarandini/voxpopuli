@@ -17,6 +17,6 @@ namespace voxpopuli.Dati
 
         public bool PresaInCarico { get; set; }
 
-        public bool Stato { get; set; }
+        public bool Risolta { get; set; }
     }
 }

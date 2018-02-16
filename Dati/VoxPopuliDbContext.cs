@@ -8,7 +8,6 @@ namespace voxpopuli.Dati
 {
     public class VoxPopuliDbContext : DbContext
     {
-
         public VoxPopuliDbContext(DbContextOptions<VoxPopuliDbContext> options)
         : base(options)
         { }
@@ -18,6 +17,8 @@ namespace voxpopuli.Dati
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             //Setting Segnalazione's properties
             modelBuilder.Entity<Segnalazione>().Property(t => t.Descrizione).IsRequired();
             modelBuilder.Entity<Segnalazione>().Property(t => t.DataSegnalazione).IsRequired();
